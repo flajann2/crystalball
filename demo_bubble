@@ -1,0 +1,2 @@
+#!/bin/bash
+java com.lrc.soap.demo.GenericBubble

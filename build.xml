@@ -1,0 +1,46 @@
+<project name="CrystalBall" default="cryApplet">
+  <property name="debug" location="on" />
+  <property name="dist" location="./bin" />
+  <property name="deploy" location="/home/fred/dev/vshake/vshake/shake" />
+
+  <target name="xmlComp" description="jclark XML Parser">
+    <javac srcdir="com/jclark" debug="${debug}" />
+  </target>
+
+  <target name="wddxComp" description="allaire WDDX Package" depends="xmlComp">
+    <javac srcdir="com/allaire" debug="${debug}" />
+  </target>
+
+  <target name="lrcUtilComp" description="lrc Util">
+    <javac srcdir="com/lrc/util" debug="${debug}" />
+  </target>
+
+  <target name="bubble" description="Bubble">
+    <javac srcdir="com/lrc/soap" debug="${debug}" />
+    <javac srcdir="com/lrc/soap/demo" debug="${debug}" />
+  </target>
+
+
+  <target name="lrcSwingComp" description="lrc Swing" depends="lrcUtilComp">
+    <javac srcdir="com/lrc/swing" debug="${debug}" />
+  </target>
+
+  <target name="cryComp" description="VShake Crystal Ball" depends="lrcUtilComp,wddxComp">
+    <javac srcdir="com/vshake/crystal" debug="${debug}" />
+  </target>
+
+  <target name="cryApplet" description="Crystal Ball Applet" depends="cryComp">
+    <mkdir dir="${dist}" />
+    <!-- <javac srcdir="." includes="RemoteBall.java" /> -->
+    <jar destfile="${dist}/cry.jar"  
+         basedir="./"
+         index="true"
+         includes="*.class,com/**"
+         excludes="**/*.java,**/*.jpeg,**/*.form"
+    />
+  </target>
+
+  <target name="deploy" description="Deploy Jar File" depends="cryApplet">
+    <copy file= "${dist}/cry.jar" todir="${deploy}" />
+  </target>
+</project>

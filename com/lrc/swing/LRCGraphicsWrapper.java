@@ -1,0 +1,37 @@
+/*
+ * GraphicsWrapper.java
+ *
+ * Created on January 15, 2002, 5:50 PM
+ */
+package com.lrc.swing;
+
+import java.awt.*;
+
+/*
+ * @(#)GraphicsWrapper.java    1.5 00/02/02
+ *
+ * Copyright 1998-2000 Sun Microsystems, Inc. All Rights Reserved.
+ *
+ * This software is the proprietary information of Sun Microsystems, Inc.
+ * Use is subject to license terms.
+ *
+ */
+import javax.swing.*;
+
+
+/**
+ * A private interface to access clip bounds in wrapped Graphics objects.
+ */
+interface LRCGraphicsWrapper {
+    Graphics subGraphics();
+
+    boolean isClipIntersecting(Rectangle r);
+
+    int getClipX();
+
+    int getClipY();
+
+    int getClipWidth();
+
+    int getClipHeight();
+}
