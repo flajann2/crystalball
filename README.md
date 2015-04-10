@@ -1,4 +1,7 @@
-# crystalball
-Patented Java UI, 1999
+# Crystalball, Patented Java UI, 1999
 
-More later.
+## Patent
+
+http://www.google.com/patents/US6628304
+
+## 
