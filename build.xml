@@ -5,34 +5,34 @@
   <property name="deploy" location="/home/fred/dev/vshake/vshake/shake" />
 
   <target name="xmlComp" description="jclark XML Parser">
-    <javac srcdir="com/jclark" debug="${debug}" />
+    <javac srcdir="com/jclark" debug="${debug}" includeantruntime="false" />
   </target>
 
   <target name="wddxComp" description="allaire WDDX Package" depends="xmlComp">
-    <javac srcdir="com/allaire" debug="${debug}" />
+    <javac srcdir="com/allaire" debug="${debug}" includeantruntime="false" />
   </target>
 
   <target name="lrcUtilComp" description="lrc Util">
-    <javac srcdir="com/lrc/util" debug="${debug}" />
+    <javac srcdir="com/lrc/util" debug="${debug}" includeantruntime="false" />
   </target>
 
   <target name="bubble" description="Bubble">
-    <javac srcdir="com/lrc/soap" debug="${debug}" />
-    <javac srcdir="com/lrc/soap/demo" debug="${debug}" />
+    <javac srcdir="com/lrc/soap" debug="${debug}" includeantruntime="false" />
+    <javac srcdir="com/lrc/soap/demo" debug="${debug}" includeantruntime="false" />
   </target>
 
 
   <target name="lrcSwingComp" description="lrc Swing" depends="lrcUtilComp">
-    <javac srcdir="com/lrc/swing" debug="${debug}" />
+    <javac srcdir="com/lrc/swing" debug="${debug}" includeantruntime="false" />
   </target>
 
   <target name="cryComp" description="VShake Crystal Ball" depends="lrcUtilComp,wddxComp">
-    <javac srcdir="com/vshake/crystal" debug="${debug}" />
+    <javac srcdir="com/vshake/crystal" debug="${debug}" includeantruntime="false" />
   </target>
 
   <target name="cryApplet" description="Crystal Ball Applet" depends="cryComp">
     <mkdir dir="${dist}" />
-    <!-- <javac srcdir="." includes="RemoteBall.java" /> -->
+    <!-- <javac srcdir="." includes="RemoteBall.java" includeantruntime="false" /> -->
     <jar destfile="${dist}/cry.jar"  
          basedir="./"
          index="true"
