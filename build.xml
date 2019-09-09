@@ -1,5 +1,5 @@
-<project name="CrystalBall" default="cryApplet">
-
+<project name="CrystalBall" default="cryApplet" xmlns:ivy="antlib:org.apache.ivy.ant">
+    
   <property name="debug" location="on" />
   <property name="dist" location="./bin" />
   <property name="deploy" location="/home/fred/dev/vshake/vshake/shake" />
