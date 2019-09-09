@@ -23,6 +23,22 @@ http://www.google.com/patents/US6628304
 
 - Click any bubble -- even in the bird's eye view -- and see what happens.
 
+*** Other demos
+    I created, since the issuance of this patent, another view algorthm
+    that is basically a "fish-eye". It represents an arbitrary-sized network
+    as well, but instead of the fractal zooming, it presents a fish-eye view,
+    which pushes those items not in focus hyperbolically to the "edge" of
+    the fish-eye "circle".
+
+- To see that, run:
+  ./demo_rand
+
+  or
+
+  ./demo_people
+
+**** TODO Currently, demo_people is broken. Bit-rot again.  
+
 ** Where do we go from here?
    This branch will remain my "plaything", where I might do some enhancements
    on this code as I see fit. No promises. One thing I might do is re-write this
@@ -30,8 +46,11 @@ http://www.google.com/patents/US6628304
 
 ** History
 
-   This code is largely unaltered from when I wrote this back in 1999. I sold
-   the patent for this code to Cisco Systems, which was issued in 2003. The
+   This code is mostly unaltered from when I wrote this back in 1999. Except
+   I eliminated most of the "bit-rot" due to various API interfaces being
+   deprecated, etc.
+   
+   I sold the patent for this code to Cisco Systems, which was issued in 2003. The
    bird's eye view was Bainbridge's only contribution. David is a great guy
    and Software Engineer working at Cisco at the time.
    
