@@ -1,4 +1,5 @@
 <project name="CrystalBall" default="cryApplet">
+
   <property name="debug" location="on" />
   <property name="dist" location="./bin" />
   <property name="deploy" location="/home/fred/dev/vshake/vshake/shake" />
