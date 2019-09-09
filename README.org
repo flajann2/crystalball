@@ -89,7 +89,7 @@ http://www.google.com/patents/US6628304
 
 ** Personal views on Software Patents and other Ramblings
 
-   This might come as a surprise to you, but I am actually against software
+   This may come as a surprise to you, but I am actually against software
    patents. So why do I have this one, you say? Simple. Money. And I was 
    happy to make the many thousands selling this to Cisco and being an
    "expert witness" for the same. Also, as an Autodidact, this represents
@@ -110,3 +110,11 @@ http://www.google.com/patents/US6628304
    and for mobiles and the web using HTML5 and Javascript with one or more
    frameworks. The animation would be much more fluid and not as rigid as
    this 20-year-old relic is.
+
+*** Addendum
+    I now reside in Germany, which does not support software patents. Yay, I think.
+    If I want a patent here, I will have to base it on something physical, and
+    I have a few ideas for that! Well, if time allows...!
+
+    No matter. Germany is a great little country and I am glad to be here.
+    Let's see what "magic" I can create in Deutschland.
