@@ -75,12 +75,12 @@ From what I've been seeing, the "big sharks" misuse patents anyway, using them
 as "weapons" to beat up on each other. Lawyers get fat, the winning corps
 make more money, and little guys get crushed if they get caught up in the
 fracas. I am all for innovation and the FREEDOM to use it, regardless of any
-"prior art" Scheiße. And now that I have experienced and been a part of the
+"prior art" Scheiße. And now that I have experienced and have been a part of the
 patent wars, I am even more so.
 
 Fortunately, the chances little guys will be impacted is minimal. Today's world
 of GUIs and UI/UX has gone to a entirely new level that was only a dream
-16 years ago. If I were doing this interface today, I'd do it differently,
+17 years ago. If I were doing this interface today, I'd do it differently,
 and for mobiles and the web using HTML5 and Javascript with one or more
 frameworks. The animation would be much more fluid and not as rigid as
-this 16-year-old relic is. 
+this 17-year-old relic is. 
